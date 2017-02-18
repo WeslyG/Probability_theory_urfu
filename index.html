@@ -14,20 +14,31 @@
 
 </head>
 <body>
-<div class="container-fluid">
 	<div class="container">
+	<div class="container-fluid header">
 		<h3>Теория вероятности, проверка</h3>
 	</div>
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary btn-sm">Добавить сервис</button>
-	</div>
-	<div class="col-md-6 data">
-		<div id="success"></div>
-		<div id="counters"></div>
-		<div id="stats"></div>
+
+		<div class="col-md-6">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+
+				<div class="form-group">
+					<label for="exampleInputName2">Число попыток</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Введите нужное число попыток"></div>
+					 <button type="submit" class="btn btn-primary btn-lg" onclick="GetRandom(document.getElementById('exampleInputName2').value)">Cчитать</button>
+				</div>
+			</div>
+
+
+		<div class="col-md-6 data border">
+			<div>Успешно <span id="success" class="green"></span></div>
+			<div>Из <span id="counters" class="green"></span> попыток </div>
+			<div>Процент успешности <span id="stats" class="green"></span> %</div>
+		</div>
 	</div>
 
-</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
