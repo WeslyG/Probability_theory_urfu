@@ -1,0 +1,19 @@
+* {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+	color: #aaa;
+}
+
+[class^="container"] {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.data {
+	text-align: left;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
