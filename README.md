@@ -1,4 +1,4 @@
-![demo](https://raw.githubusercontent.com/WeslyG/Probability_theory_urfu/master/images/favicon3.png)
+![demo](https://raw.githubusercontent.com/WeslyG/Probability_theory_urfu/master/images/favicon2.png)
 ## Приложение для симуляции рандомного вынимания одновременно 3х шаров разного цвета из корзины. 
 
 ### Версия
