@@ -1,8 +1,13 @@
 var min = 0;
 var max = 11;
 var success = 0;
-var counters = 1000;
+// var counters = 1000;
 
+
+function GetHello(main) {
+	alert('Hello ' + main);
+	// alert(document.getElementById('name').value);
+}
 
 //условия задачи
 var result1 = ["white", "black", "black"];
@@ -27,7 +32,9 @@ function isEq (args1, args2) {
 }
 
 //на цикле все умерло, если его отключить, все здорово. 
+function GetRandom(value) {
 
+counters = value;
 
 for (i=0; i < counters; i++){
 	//рандомим тут три числа, от мин до макс.
@@ -55,12 +62,19 @@ for (i=0; i < counters; i++){
 }
 
 
+
 // document.getElementById('Gold').innerHTML = Gold;
 
 console.log( "Успешно "  + success);
 console.log( "Из "  + counters + " попыток");
 console.log( "Процент успешности " + Math.floor((success*100)/counters));
 
-document.getElementById('success').innerHTML = ("Успешно " + success);
-document.getElementById('counters').innerHTML = ( "Из "  + counters + " попыток");
-document.getElementById('stats').innerHTML = ( "Процент успешности " + Math.floor((success*100)/counters) + " %");
+document.getElementById('success').innerHTML = (success);
+document.getElementById('counters').innerHTML = (counters);
+document.getElementById('stats').innerHTML = (Math.floor((success*100)/counters));
+
+
+	success = 0;
+	counters = 0;
+
+} //close func
